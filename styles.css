@@ -1,0 +1,178 @@
+:root {
+  --violet: #674baf;
+  --soft-magenta: #e882e8;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(images/bg-mobile.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--violet);
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  padding: 2rem 2rem;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.hero {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__img-container {
+  width: 80%;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+.hero__description-container {
+  width: 275px;
+  align-self: stretch;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-family: 'Poppins', sans-serif;
+  margin: 3rem 0rem 2rem;
+  font-size: 1.5rem;
+}
+
+.hero__text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.register-button {
+  padding: 0.5rem 5rem;
+  border-radius: 50px;
+  border: 1px solid;
+  color: var(--violet);
+  font-family: 'Poppins';
+  font-size: 1rem;
+  box-shadow: 0px 4px 20px -8px black;
+}
+
+.register-button:active {
+  color: white;
+  background-color: var(--soft-magenta);
+  outline: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0 auto;
+  padding: 1rem;
+  width: 150px;
+}
+
+.social-icon {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 4%;
+}
+
+.social-icon:active {
+  border-color: var(--soft-magenta);
+}
+
+.social-icon:active svg path {
+  fill: var(--soft-magenta);
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-position: 1rem center;
+    background-size: auto;
+  }
+
+  header {
+    padding: 3rem 4rem;
+    margin-bottom: 0px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero__img-container {
+    width: 50%;
+  }
+
+  .hero__img {
+  }
+
+  .hero__description-container {
+    margin: 0;
+    margin-left: 2rem;
+    width: 550px;
+    text-align: left;
+    align-self: stretch;
+  }
+
+  .hero__title {
+    font-family: 'Poppins', sans-serif;
+    margin: 3rem 0rem 2rem;
+    font-size: 2.5rem;
+  }
+
+  .hero__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .register-button {
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    border: 1px solid;
+    color: var(--violet);
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 20px -8px black;
+  }
+
+  footer {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+
+  .social-media-container {
+    margin: 0 1rem 0 0;
+  }
+
+  .social-icon {
+    padding: 5.5%;
+  }
+
+  .social-icon svg {
+    width: 20px;
+  }
+}
